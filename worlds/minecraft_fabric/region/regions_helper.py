@@ -41,14 +41,17 @@ def blacklisted_location(world: FabricMinecraftWorld, location_type: int):
         FLOWER_AND_EXPLORATION: "Flowers" in world.options.excluded_from_itemsanity.value or "Exploration" in world.options.excluded_locations.value,
         FLOWER_AND_HARD: "Flowers" in world.options.excluded_from_itemsanity.value or "Hard" in world.options.excluded_locations.value,
 
-        SLAB: "Slabs" in world.options.excluded_from_itemsanity.value,
-        SLAB_AND_EXPLORATION: "Slabs" in world.options.excluded_from_itemsanity.value or "Exploration" in world.options.excluded_locations.value,
+        WOOD_CRAFTING: "Wood Crafting" in world.options.excluded_from_itemsanity.value,
+        WOOD_CRAFTING_AND_EXPLORATION: "Wood Crafting" in world.options.excluded_from_itemsanity.value or "Exploration" in world.options.excluded_locations.value,
 
-        STAIR: "Stairs" in world.options.excluded_from_itemsanity.value,
-        STAIR_AND_EXPLORATION: "Stairs" in world.options.excluded_from_itemsanity.value or "Exploration" in world.options.excluded_locations.value,
+        STONE_CRAFTING: "Stone Crafting" in world.options.excluded_from_itemsanity.value,
+        STONE_CRAFTING_AND_EXPLORATION: "Stone Crafting" in world.options.excluded_from_itemsanity.value or "Exploration" in world.options.excluded_locations.value,
 
-        WALL: "Walls" in world.options.excluded_from_itemsanity.value,
-        WALL_AND_EXPLORATION: "Walls" in world.options.excluded_from_itemsanity.value or "Exploration" in world.options.excluded_locations.value,
+        COPPER_CRAFTING: "Copper Crafting" in world.options.excluded_from_itemsanity.value,
+        COPPER_CRAFTING_AND_EXPLORATION: "Copper Crafting" in world.options.excluded_from_itemsanity.value or "Exploration" in world.options.excluded_locations.value,
+
+        TREE_DROP: "Tree Drops" in world.options.excluded_from_itemsanity.value,
+        TREE_DROP_AND_EXPLORATION: "Tree Drops" in world.options.excluded_from_itemsanity.value or "Exploration" in world.options.excluded_locations.value,
     }
 
     if location_type in exclusions:

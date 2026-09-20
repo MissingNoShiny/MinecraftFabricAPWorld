@@ -148,9 +148,13 @@ class ExcludedFromItemsanity(OptionSet):
         Netherite Gear - Netherite Tools, Armor, and Netherite Smithing Template
         Trims - Smithing Templates that're used for Trims (Doesn't include Upgrade Templates)
         Sherds - Pottery Sherds
-        Slabs - Slabs (such as Oak Slabs, Stone Slabs, etc.)
-        Stairs - Stairs (such as Oak Stairs, Stone Stairs, etc.)
-        Walls - Walls, Fences, and Fence Gates (Oak Fence, Stone Wall, etc.)
+        Wood Crafting - Everything craftable from one tree's Log (Planks, Wood, Hyphae, Stripped
+        variants, Doors, Trapdoors, Buttons, Pressure Plates, Signs, Hanging Signs, Slabs, Stairs,
+        Fences, Fence Gates, Bamboo Mosaic, Boats, Chest Boats, Bamboo Rafts)
+        Stone Crafting - Everything craftable from a naturally occurring stone (Polished, Chiseled,
+        Cut, Smooth and Brick forms, plus their Slabs, Stairs and Walls)
+        Copper Crafting - Cut, Oxidized and Waxed Copper, and their Slabs and Stairs
+        Tree Drops - Saplings and Leaves (not Apples)
     """
     display_name = "Excluded From Itemsanity"
     default = {
@@ -171,9 +175,10 @@ class ExcludedFromItemsanity(OptionSet):
         "Trims",
         "Sherds",
         "Flowers",
-        "Slabs",
-        "Stairs",
-        "Walls"
+        "Wood Crafting",
+        "Stone Crafting",
+        "Copper Crafting",
+        "Tree Drops"
     }
 
 class EmptyFillPercentage(Range):
