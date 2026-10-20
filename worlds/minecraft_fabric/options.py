@@ -198,6 +198,7 @@ class DifficultyOption(OptionSet):
     valid_keys = {
         "Iron Weapons",
         "Iron Armor",
+        "Gold Armor",
         "Bow",
         "Jump",
         "Sprint",
@@ -213,6 +214,7 @@ class ShouldHaveBeforeNetherAccess(DifficultyOption):
     Available Items
         "Iron Weapons"
         "Iron Armor"
+        "Gold Armor"
         "Bow"
         "Jump"
         "Sprint"
@@ -234,6 +236,7 @@ class ShouldHaveBeforeWitherOrDragon(DifficultyOption):
     Available Items
         "Iron Weapons"
         "Iron Armor"
+        "Gold Armor"
         "Bow"
         "Jump"
         "Sprint"
@@ -259,6 +262,7 @@ class ShouldHaveBeforeRaids(DifficultyOption):
     Available Items
         "Iron Weapons"
         "Iron Armor"
+        "Gold Armor"
         "Bow"
         "Jump"
         "Sprint"
